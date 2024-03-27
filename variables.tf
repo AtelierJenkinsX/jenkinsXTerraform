@@ -14,6 +14,7 @@ variable "profile" {
 variable "cluster_version" {
   description = "Kubernetes version to use for the EKS cluster."
   type        = string
+  default     = "1.20"
 }
 
 variable "vault_user" {
@@ -43,6 +44,7 @@ variable "is_jx2" {
 variable "jx_git_url" {
   description = "URL for the Jenins X cluster git repository"
   type        = string
+  default     = "https://github.com/AtelierJenkinsX/jenkinsXclusterASM.git"
 }
 
 variable "jx_bot_username" {
